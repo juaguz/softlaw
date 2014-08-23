@@ -5,9 +5,11 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"barryvdh/laravel-debugbar": "1.x"
-        
-	},
+		"barryvdh/laravel-debugbar": "1.x",
+        "xethron/migrations-generator": "dev-master",
+        "way/generators": "2.*"
+
+    },
 	"autoload": {
 	    "psr-4":{
 	      "Usuarios\\":"app/Usuarios",
