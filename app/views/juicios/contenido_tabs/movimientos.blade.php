@@ -1,4 +1,4 @@
-<table class="table table-bordered table-responsive box box-success ">
+<table class="table table-bordered table-responsive box box-success " id="tablaMovimiento">
     <thead>
         <th>Fecha</th>
         <th>Detalle</th>
@@ -11,4 +11,4 @@
     </tbody>
 </table>
 
-<a href="#" data-toggle="modal" data-target="#" class="btn btn-primary"><i class="fa fa-plus"></i> Crear Movimiento</a>
+<a href="#" data-toggle="modal" data-target="#movimientosModal" class="btn btn-primary"><i class="fa fa-plus"></i> Crear Movimiento</a>

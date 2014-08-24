@@ -8,7 +8,6 @@ class MovimientosManager extends BaseManager{
 
 	 	$rules = [
                 "fecha"=>"required",
-                "hora"=>"required",
 	 	];
 	 	return $rules;
 
@@ -18,7 +17,6 @@ class MovimientosManager extends BaseManager{
     {
         $message = [
             "fecha.required"=>"El campo de Fecha de  es Obligatorio",
-            "hora.required" =>"El campo de Hora de  es Obligatorio"
         ];
 
         return $message;

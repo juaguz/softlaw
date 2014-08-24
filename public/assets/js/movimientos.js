@@ -2,32 +2,32 @@
     
 "use strict";
 
-var audiencias     = new Helper();
-var idForm     = "#audienciaFrm";
-var msg        = "#msg_audiencia";
-var tablaAudiencia = "#tablaAudiencia";
-var idJuicio   = $("#id_juicio").val();
-var extraData  = {name:'id_juicio',value:idJuicio};
+var movimientos     = new Helper();
+var idForm          = "#movimientoFrm";
+var msg             = "#msg_movimiento";
+var tablaMovimiento = "#tablaMovimiento";
+var idJuicio       = $("#id_juicio").val();
+var extraData      = {name:'id_juicio',value:idJuicio};
 
-function tablaAudiencias(){
-    audiencias.ajax(null,"POST",audiencias.basePath+'/audiencias/getAudienciasJuicios',{id_juicio:idJuicio},function(html){
-        $(tablaAudiencia).html(html);
+function tablaMovimientos(){
+    movimientos.ajax(null,"POST",movimientos.basePath+'/movimientos/getMovimientosJuicios',{id_juicio:idJuicio},function(html){
+        $(tablaMovimiento).html(html);
     })
 }
 
-audiencias.sendForm(idForm,function(rta){
+movimientos.sendForm(idForm,function(rta){
     if(rta.response == 'faill'){
-        audiencias.ErrorMsg(rta,msg,3500);
+        movimientos.ErrorMsg(rta,msg,3500);
     }else{
-        audiencias.SuccessMsg(rta,msg);
-        audiencias.resetForm(idForm);
-        tablaAudiencias();
+        movimientos.SuccessMsg(rta,msg);
+        movimientos.resetForm(idForm);
+        tablaMovimientos();
 
     }
     $('html, body, '+msg).animate({scrollTop : 0},800);
 },extraData);
 $(function(){
-    tablaAudiencias();
+    tablaMovimientos();
 
 });
 

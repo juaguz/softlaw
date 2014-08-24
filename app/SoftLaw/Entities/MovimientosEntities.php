@@ -13,6 +13,15 @@ class MovimientosEntities extends \Eloquent{
 
     protected $table = "movimientos";
 
+    protected $fillable = ["fecha","descripcion","id_juicio"];
+
+    public function setFechaAttribute($value)
+    {
+        $this->attributes['fecha'] = formatToMysql($value);
+    }
+    public function getFechaAttribute($value){
+        return fromMysql($value);
+    }
 
 
 } 

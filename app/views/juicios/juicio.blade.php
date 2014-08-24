@@ -39,6 +39,7 @@ Datos del Juicio: {{ $juicio->partes }}
 
 @include('juicios.modals.tarea_form',["action"=>"Crear"])
 @include('juicios.modals.audiencias_form',["action"=>"Crear"])
+@include('juicios.modals.movimientos',["action"=>"Crear"])
 
 
 @stop
@@ -46,4 +47,5 @@ Datos del Juicio: {{ $juicio->partes }}
 @section('scripts')
 {{ HTML::script('assets/js/tareas.js') }}
 {{ HTML::script('assets/js/audiencias.js') }}
+{{ HTML::script('assets/js/movimientos.js') }}
 @stop

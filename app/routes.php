@@ -29,11 +29,11 @@ Route::resource('fueros','FuerosController');
 Route::resource('juzgados','JuzgadosController');
 Route::resource('etapas','EtapasController');
 Route::resource('tareas','TareasController');
+Route::resource('movimientos','MovimientosController');
 Route::resource('audiencias','AudienciasController');
 Route::resource('calendario','CalendarioController');
+/* Listados */
 Route::post('tareas/getTareasJuicio','TareasController@getTareasJuicio');
 Route::post('audiencias/getAudienciasJuicios','AudienciasController@getAudienciasJuicio');
-Route::post('comando',function(){
-    Artisan::call('git:pull',[]);
-});
-//comentario2
+Route::post('movimientos/getMovimientosJuicios','MovimientosController@getMovimientosJuicio');
+

@@ -5,15 +5,20 @@ function formatToMysql($value){
 }
 
 function fromMysql($value){
-    $fecha =  Carbon::createFromFormat('Y-m-d', $value);
-    //04:39:26
-    return $fecha->format('d/m/Y');
+    if(!empty($value)){
+        $fecha =  Carbon::createFromFormat('Y-m-d', $value);
+        //04:39:26
+        return $fecha->format('d/m/Y');
+    }
 
 }
 function TimeStampsMysql($value){
-    $fecha =  Carbon::createFromFormat('Y-m-d h:i:s', $value);
-    //04:39:26
-    return $fecha->format('d/m/Y');
+    if(!empty($value)){
+        $fecha =  Carbon::createFromFormat('Y-m-d h:i:s', $value);
+        //04:39:26
+        return $fecha->format('d/m/Y');
+    }
+
 
 }
 
