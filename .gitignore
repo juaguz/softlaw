@@ -1,6 +1,9 @@
+.gitignore
+app/routes.php
 /bootstrap/compiled.php
 /vendor
 .idea
+composer.json
 composer.phar
 composer.lock
 .env.*.php

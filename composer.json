@@ -4,12 +4,7 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*",
-		"barryvdh/laravel-debugbar": "1.x",
-        "xethron/migrations-generator": "dev-master",
-        "way/generators": "2.*",
-        "phpspec/phpspec":"~2.0.0",
-        "codeception/codeception":"~2.0.0"
+		"laravel/framework": "4.2.*"
 
 
     },
