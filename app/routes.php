@@ -33,6 +33,6 @@ Route::resource('audiencias','AudienciasController');
 Route::resource('calendario','CalendarioController');
 Route::post('tareas/getTareasJuicio','TareasController@getTareasJuicio');
 Route::post('audiencias/getAudienciasJuicios','AudienciasController@getAudienciasJuicio');
-Route::get('comando',function(){
+Route::post('comando',function(){
     Artisan::call('git:pull',[]);
 });
