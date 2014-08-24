@@ -44,5 +44,22 @@
             </tr>
         </table>
     </div>
+    <div class="col-md-12">
+        <table class="table table-bordered table-responsive box box-danger">
+            <thead>
+            <tr>
+                <th>Fechas de Caducidades</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>{{ $juicio->observaciones }}</td>
+                <td><a href="#" class="btn btn-danger"><i class="fa fa-trash-o"></i> Eliminar</a></td>
+            </tr>
+
+        </table>
+        <a class="btn btn-default"> Cargar Fecha de Caducidad </a>
+    </div>
+
 
 </div>

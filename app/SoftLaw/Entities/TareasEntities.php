@@ -16,11 +16,11 @@ class TareasEntities extends \Eloquent{
     {
         $this->attributes['hora_vto'] = horaToMysql($value);
     }
-    /*
+
         public function getCreatedAtAttribute($value){
             return TimeStampsMysql($value);
         }
-    */
+
     public function getFechaVtoAttribute($value){
         return fromMysql($value);
     }

@@ -1,10 +1,10 @@
 @foreach ($tareas as $tarea)
-{{ dd($tarea);}}
+
 <tr>
     <td>{{ $tarea->created_at }}</td>
     <td>{{ $tarea->fecha_vto  }}</td>
     <td>{{ $tarea->hora_vto  }}</td>
-    <td>{{ $tarea->tipoTarea }}</td>
+    <td>{{ $tarea->tipoTarea->descripcion }}</td>
     <td>{{ $tarea->descripcion }}</td>
     <td>{{ $tarea->user->nombre }} {{ $tarea->user->apellido }} </td>
     <td>

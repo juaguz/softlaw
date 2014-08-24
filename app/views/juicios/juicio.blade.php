@@ -24,7 +24,7 @@ Datos del Juicio: {{ $juicio->partes }}
 
         </div><!-- /.tab-pane -->
         <div class="tab-pane" id="tab_3">
-
+            @include('juicios.contenido_tabs.movimientos')
         </div><!-- /.tab-pane -->
         <div class="tab-pane" id="tab_4">
             @include('juicios.contenido_tabs.audiencias')

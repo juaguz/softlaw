@@ -11,14 +11,14 @@ class CommanderGenerateCommand extends Command {
 	 *
 	 * @var string
 	 */
-	protected $name = 'commander:generate';
+	protected $name = 'git:pull';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Genearate Command and handler class.';
+	protected $description = 'Pull del proyecto.';
 
 	/**
 	 * Create a new command instance.

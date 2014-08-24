@@ -29,7 +29,7 @@ class TareasRepo extends BaseRepo{
 
 	public function getTareas($idJucio){
 
-		return $this->model->with('tipoTarea')->get();
+		return $this->model->with('tipoTarea')->with('user')->get();
 	}
 	
 }

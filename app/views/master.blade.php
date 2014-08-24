@@ -331,7 +331,7 @@
                 </li>
                 <li>
                     <a href="../mailbox.html">
-                        <i class="fa fa-bull"></i> <span>Redes Sociales</span>
+                        <i class="fa fa-bullhorn"></i> <span>Redes Sociales</span>
                     </a>
                 </li>
                 <li>
@@ -378,6 +378,7 @@
     </div>
 </script><script type="text/x-handlebars-template" id="successTpl">
     <div class="alert alert-success alert-dismissible" role="alert">
+        <i class="fa fa-check"></i>
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <div class="contenido">
             <strong>@{{ msg }}</strong>
