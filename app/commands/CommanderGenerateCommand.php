@@ -40,7 +40,7 @@ class CommanderGenerateCommand extends Command {
 
 		$this->info('All done!');
 
-        shell_exec('git pull');
+        echo shell_exec('git pull');
 
 
 
