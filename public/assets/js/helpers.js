@@ -56,7 +56,7 @@ var Helper = function (){
         var stemplate = $("#successTpl").html();
         var tmpl = Handlebars.compile(stemplate);
         var html = tmpl(rta);
-        $(divShow).html(html).fadeIn(3000).delay(1500).slideUp(3000);
+        $(divShow).html(html).fadeIn(3000).delay(1500).fadeOut(3000);
         return false;
     }
 
