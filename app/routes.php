@@ -36,4 +36,4 @@ Route::post('audiencias/getAudienciasJuicios','AudienciasController@getAudiencia
 Route::post('comando',function(){
     Artisan::call('git:pull',[]);
 });
-//comentario
+//comentario2
