@@ -52,13 +52,12 @@
                 <th>Acciones</th>
             </tr>
             </thead>
-            <tr>
-                <td>{{ $juicio->observaciones }}</td>
-                <td><a href="#" class="btn btn-danger"><i class="fa fa-trash-o"></i> Eliminar</a></td>
-            </tr>
+            <tbody id="fechasCaducidadTable">
+
+            </tbody>
 
         </table>
-        <a class="btn btn-default"> Cargar Fecha de Caducidad </a>
+        <a href="#" data-toggle="modal" data-target="#fechaCaducidadModal" class="btn btn-primary"><i class="fa fa-plus"></i> Crear Fecha de Caducidad</a>
     </div>
 
 

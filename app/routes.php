@@ -32,8 +32,12 @@ Route::resource('tareas','TareasController');
 Route::resource('movimientos','MovimientosController');
 Route::resource('audiencias','AudienciasController');
 Route::resource('calendario','CalendarioController');
+Route::resource('fechas_caducidad','FechasCaducidadController');
 /* Listados */
 Route::post('tareas/getTareasJuicio','TareasController@getTareasJuicio');
 Route::post('audiencias/getAudienciasJuicios','AudienciasController@getAudienciasJuicio');
 Route::post('movimientos/getMovimientosJuicios','MovimientosController@getMovimientosJuicio');
+Route::post('fechas_caducidad/getFechasCaducidad','FechasCaducidadController@getFechasCaducidad');
+
+
 

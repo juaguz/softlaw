@@ -1,5 +1,3 @@
-
-
 $(function(){
 
     $('.timepicker').timepicker({
@@ -15,5 +13,6 @@ $(function(){
 
 
 
-});
 
+
+});

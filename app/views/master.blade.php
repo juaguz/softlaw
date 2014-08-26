@@ -409,12 +409,15 @@
 
 
 <!-- Herlpers Functions -->
-{{ HTML::script('assets/js/helpers.js') }}
-{{ HTML::script('assets/js/config.js') }}
+
 
 <!-- AdminLTE for demo purposes -->
 {{ HTML::script('libs/js/plugins/datatables/jquery.dataTables.js') }}
 {{ HTML::script('libs/js/plugins/datatables/dataTables.bootstrap.js') }}
+{{ HTML::script('libs/js/jquery.tablesorter.pager.js') }}
+
+{{ HTML::script('assets/js/helpers.js') }}
+{{ HTML::script('assets/js/config.js') }}
 
 @yield('scripts')
 </body>

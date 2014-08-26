@@ -1,5 +1,5 @@
-<table class="table table-bordered table-responsive box box-success" id="tblTareas">
-    <thead>
+<table class="table table-bordered table-responsive box box-success table_sorteable " id="tblTareas">
+<thead>
         <th>Fecha de Creación</th>
         <th>Fecha</th>
         <th>Hora</th>
