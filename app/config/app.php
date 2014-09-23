@@ -121,8 +121,12 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
+        'Way\Generators\GeneratorsServiceProvider',
+        'Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider',
 
-	),
+
+    ),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -190,6 +194,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
 
-	),
+
+    ),
 
 );

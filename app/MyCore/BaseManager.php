@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Combos\Managers;
+namespaces MyCore;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
@@ -44,7 +44,7 @@ abstract class BaseManager {
 
     }
 
-   
+
 
     public function save($msgCorrecto){
        if(!$this->isValid()){
@@ -57,4 +57,4 @@ abstract class BaseManager {
         $this->entity->save();
         return \Response::json($msgCorrecto);
     }
-} 
+}

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Combos\Repositories;
+namespace MyCore;
 
 
 abstract class BaseRepo {
@@ -50,4 +50,4 @@ abstract class BaseRepo {
         return $this->model->where($campo,'=',$valor)->get();
     }
 
-} 
+}

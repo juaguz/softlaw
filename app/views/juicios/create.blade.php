@@ -7,6 +7,14 @@
 <li class="active">Cargar Juicio</li>
 @stop
 @section('container')
+<form method="post" action="http://mev.scba.gov.ar/loguin.asp?familiadepto=">
+    <input name="usuario">
+    <input name="clave">
+    <input type="submit" value="enviar">
+
+</form>
+
+
 <div id="msg_juicios"></div>
 <div class="box box-info">
     <div class="box-body">
